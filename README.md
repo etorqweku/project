@@ -3,8 +3,8 @@
 
 1. Clone the repository::
 
-      git clone https://github.com/flask-admin/flask-admin.git
-      cd flask-admin
+      git clone https://github.com/etorqweku/project.git
+      cd project
 
 2. Create and activate a virtual environment::
 
@@ -13,8 +13,8 @@
 
 3. Install requirements::
 
-      pip install -r examples/sqla/requirements.txt
+      pip install -r requirements.txt
 
 4. Run the application::
 
-      python examples/sqla/run_server.py
+      python main.py

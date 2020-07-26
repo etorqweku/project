@@ -1,0 +1,15 @@
+{% extends "agent/base.html" %}
+
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Edit Profile</h1>
+    <div class="row">
+        <form action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
+            <div class="col-md-4">
+                {{ wtf.quick_form(form) }}
+            </div> 
+        </form>
+        
+    </div>
+{% endblock %} 

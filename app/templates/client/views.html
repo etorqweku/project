@@ -1,0 +1,18 @@
+{% extends "client/base.html" %}
+
+{% block content %}
+<table class="table table-hover">
+    <tr >
+        <td width="256px"><img src="{{agents.avatar(256)}}" alt="avatar"></td>
+        <td><h1>Name: {{agents.name}}</h1>
+            <h1>Username: {{ agents.username }}</h1>
+            <h1>Proffession: {{agents.proffession}}</h1>
+            <h1>Email: {{agents.email}}</h1>
+            {% if agents.contact %}<p>Contact:{{ agents.contact }}</p>{% endif %}
+            {% if agents.about_me %}<p>Bio:{{ agents.about_me }}</p>{% endif %}
+            {% if agents.last_seen %}<p>Last seen on: {{ agents.last_seen }}</p>{% endif %}
+        </td> 
+    
+    </tr>
+</table>
+{% endblock %}

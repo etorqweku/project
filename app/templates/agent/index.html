@@ -1,0 +1,5 @@
+{% extends "agent/base.html" %}
+
+{% block content %}
+    <h1>Hello! {{ current_user.username}}. Please continue to <a href="{{ url_for('user', username=current_user.username ) }}">profile</a> </h1>
+{% endblock %}
